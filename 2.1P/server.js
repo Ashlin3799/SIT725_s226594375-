@@ -15,9 +15,6 @@ app.get('/api', (req, res) => {
     res.send("Calculator API is running.");
 });
 
-// GET Addition
-// Example:
-// http://localhost:3000/add?a=10&b=20
 
 app.get('/add', (req, res) => {
 
@@ -34,7 +31,7 @@ app.get('/add', (req, res) => {
 
 });
 
-// (Optional) POST Addition
+//  POST Addition
 app.post('/add', (req, res) => {
 
     const { a, b } = req.body;
